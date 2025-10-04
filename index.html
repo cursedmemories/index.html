@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спойствие bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            background: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            padding: 30px;
+            line-height: 1.6;
+            color: #333;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 0 30px 30px;
+        }
+
+        .social-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .social-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .discord { color: #5865F2; }
+        .twitch { color: #9146FF; }
+        .tiktok { color: #000000; }
+        .github { color: #333333; }
+        .steam { color: #171a21; }
+        .yandex-music { color: #FF0000; }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        @media (max-width: 600px) {
+            .social-links {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .avatar {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .social-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>спокойствие.</h1>
+            <p class="tagline">Психопат | Нарцисс | Лижу пизду</p>
+        </div>
+        
+        <div class="bio">
+            <p>Харизматичный чел обучающийся на программиста</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://discord.gg/e6ht6jrp78" class="social-card" target="_blank">
+                <div class="social-icon discord">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="social-name">Discord</div>
+            </a>
+            
+            <a href="https://twitch.tv/steptowin" class="social-card" target="_blank">
+                <div class="social-icon twitch">
+                    <i class="fab fa-twitch"></i>
+                </div>
+                <div class="social-name">Twitch</div>
+            </a>
+            
+            <a href="https://tiktok.com/@spokoistviee" class="social-card" target="_blank">
+                <div class="social-icon tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="social-name">TikTok</div>
+            </a>
+            
+            <a href="https://github.com/cursedmemories" class="social-card" target="_blank">
+                <div class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="social-name">GitHub</div>
+            </a>
+            
+            <a href="https://steamcommunity.com/id/whykonfuz" class="social-card" target="_blank">
+                <div class="social-icon steam">
+                    <i class="fab fa-steam"></i>
+                </div>
+                <div class="social-name">Steam</div>
+            </a>
+            
+            <a href="https://music.yandex.ru/album/38247955?utm_source=desktop&utm_medium=copy_link" class="social-card" target="_blank">
+                <div class="social-icon yandex-music">
+                    <i class="fab fa-yandex"></i>
+                </div>
+                <div class="social-name">Яндекс Музыка</div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 Все права защищены</p>
+        </div>
+    </div>
+</body>
+</html>
